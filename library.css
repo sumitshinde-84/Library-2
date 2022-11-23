@@ -99,8 +99,7 @@
   .header .text{
     margin-top: 17px;
     color:  #05386B;
-    display: flex;
-    flex-direction: column;
+    
    }
 
   .header img{
@@ -112,18 +111,19 @@
 
   }
 
-  .header h2{
+  .text h2{
 
    font-size: 20px;
    font-family: 'Bungee', cursive;;
   
   }
 
- .header p{
+ .text p{
 
     font-size:14px ;
     font-weight: lighter;
-    font-family: 'Istok Web', sans-serif;   
+    font-family: 'Istok Web', sans-serif; 
+    position: absolute;  
 }
 
 .addbtn{
