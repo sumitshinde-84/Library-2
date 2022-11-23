@@ -98,9 +98,8 @@
   }
 
   .header .text{
-    margin-top: 17px;
+    margin-top: 14px;
     color:  #05386B;
-    
     
    }
 
@@ -117,7 +116,8 @@
 
    font-size: 20px;
    font-family: 'Bungee', cursive;;
-  margin-bottom: 0px;
+   margin-bottom: -5px;
+  
   }
 
   .header .text p{
@@ -125,7 +125,7 @@
     font-size:14px ;
     font-weight: lighter;
     font-family: 'Istok Web', sans-serif; 
-    margin-top: 0;
+    
    
 }
 
