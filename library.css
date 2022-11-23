@@ -99,6 +99,8 @@
   .header .text{
     margin-top: 17px;
     color:  #05386B;
+    display: flex;
+    flex-direction: column;
    }
 
   .header img{
