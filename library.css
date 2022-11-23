@@ -101,6 +101,7 @@
     margin-top: 17px;
     color:  #05386B;
     
+    
    }
 
   .header img{
@@ -116,7 +117,7 @@
 
    font-size: 20px;
    font-family: 'Bungee', cursive;;
-  
+  margin-bottom: 0px;
   }
 
   .header .text p{
