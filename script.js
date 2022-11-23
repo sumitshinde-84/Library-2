@@ -118,7 +118,7 @@ add.addEventListener('click',()=>{
     myLibrary.push(newBook)
     i++;
     checkbox.value='Not Read'
-    event.preventDefault()
+    
 })
 
 
