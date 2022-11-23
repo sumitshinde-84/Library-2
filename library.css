@@ -37,7 +37,6 @@
 
 .content{
     width: 100vw;
-    height: auto;
     grid-area: content;
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
@@ -112,14 +111,19 @@
 
   }
 
-  .header .text h2{
+  .header h2{
 
-   font-size: 26px;
+   font-size: 20px;
    font-family: 'Bungee', cursive;;
-   margin-bottom: -10px;
   
   }
 
+ .header p{
+
+    font-size:14px ;
+    font-weight: lighter;
+    font-family: 'Istok Web', sans-serif;   
+}
 
 .addbtn{
 
