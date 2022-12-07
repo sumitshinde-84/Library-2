@@ -30,15 +30,28 @@ i=0;
 
 
 
-
-function book(title,author,pages,status){
-    this.title = title;
-    this.author = author
-    this.pages= pages;
-    this.status= status;
+class book{
+    constructor(title,author,pages,status){
+        this.title = title;
+        this.author = author,
+        this.pages = pages,
+        this.status = status
+    }
 
     
 }
+
+
+
+
+// function book(title,author,pages,status){
+//     this.title = title;
+//     this.author = author
+//     this.pages= pages;
+//     this.status= status;
+
+    
+// }
 
 
 addBtn.addEventListener('click',(e)=>{

@@ -278,3 +278,13 @@ input[type="text"],input[type="tel"]{
     margin-left: auto;
     margin-bottom: auto;
   }
+
+
+
+
+  .text-animation{
+    z-index: 100;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+  }
