@@ -1,215 +1,219 @@
-*{
-    margin: 0;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-  body{
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-   
-  }
-  .main{
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 
-    background-color:#05386B;
-    width: 100wh;
-    height: 100vh;
-    overflow: hidden;
-   
-
-   }
-
-  .header{
-
-    background-color: #5CDC95;
-    height: 70px;
-    width: 100vw;
-    display: flex;
-    position: relative;
-    
-  }
-
-  .menu{
-
-    position: absolute;
-    right: 1px;
-    font-family: 'Roboto', sans-serif;;
-  }
-
-   .menu ul{
-    
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    margin: 20px;
-    gap: 20px;
-    font-size: 18px;
-   
-
-  }
- 
-  .menu ul li a{
-    text-decoration: none;
-    color: #05386B;
-    
-  }
-
-  .menu li div{
-    height: 0px;
-    padding: 2px;
-    transition: .5s;
-    align-items: center;
-    
-  }
-
-  .menu li div:hover{
-    height: 20px;
-    
-    background-color: #05386B;
-    color: white;
-   }
-
-   
-
-  .logo{
-    display: flex;
-  }
-
-  .header .text{
-    margin-top: 17px;
-    color:  #05386B;
-   }
-
-  .header img{
-
-     width: 40px;
-    height: 40px;
-    margin-top: 16px;
-    margin-left: 10px;
-
-  }
-
-  .header h2{
-
-   font-size: 26px;
-   font-family: 'Bungee', cursive;;
-   
-  
-  }
-
- .header p{
-
-    font-size:14px ;
-    font-weight: lighter;
-    font-family: 'Istok Web', sans-serif;   
 }
 
-  .main-content{
+.main {
 
-    display: flex;
-    justify-content: space-around;
-
-  }
-
-  .content{
-    color:#b6bcc4;
-    margin-top: 20px;
-    display: grid;
-   
-  }
-
-  .content h1{
-   font-size: 70px;
-   margin-bottom: 9px;
-   font-family: 'Arvo', serif; 
-   transform: translate(800px);
-   transition: .5s;
-   color: black;
-  }
-
-  .content h3{
-    font-size: 40px;
-    margin-bottom: 10px;
-    transform: translate(0px,-800px);
-   transition: .6s;
-
-  }
-
-  .content p{
-    font-size: 20px;
-    width: 400px;
-    font-family: 'Caveat', cursive;
-    transform: translate(-900px);
-   transition: .5s;
-  }
+  background-color: #05386B;
+  width: 100wh;
+  height: 100vh;
+  overflow: hidden;
 
 
-   .main-content img{
-    width:100%;
-  }
-
-  .sidebanner{
-    display: flex;
-    justify-content: center;
-    border-radius: 7px;
-    width: 450px;
-    height: 400px;
-    border: 1px #EDF5E1 solid;
-    margin-top: 30px;
-    margin-left: 70px;
-    scale: 10;
-    transition: .2s;
-  }
-
-
-   .content #sign-up{
-    padding: 9px 19px;
-    border: none;
-    background-color: #5CDC95;
-    border-radius: 5px;
-    color: #05386B;
-    margin-top: 20px;
-    font-family:  'Roboto', sans-serif;
-    opacity: 0;
-    transition: 1s;
-  }
- 
-  .content #sign-up:hover{
-    padding: 9px 19px;
-    border: none;
-    background-color: #34a366;
-    border-radius: 5px;
-    color: #05386B;
-    margin-top: 20px;
-    font-family:  'Roboto', sans-serif;
 }
 
+.header {
 
-.preloader{
-    background: #b6bcc4 ;
-    
-    height: 100vh;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-    display: flex;
-    position: relative;
+  background-color: #5CDC95;
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  position: relative;
+
 }
 
-.round{
-    
-    width: 150px;
-    height: 150px;
-    background: #34a366 url(images/loader.gif) center center no-repeat;
-    background-size: 90%;
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    
+.menu {
 
+  position: absolute;
+  right: 1px;
+  font-family: 'Roboto', sans-serif;
+  ;
+}
+
+.menu ul {
+
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin: 20px;
+  gap: 20px;
+  font-size: 18px;
+
+
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #05386B;
+
+}
+
+.menu li div {
+  height: 0px;
+  padding: 2px;
+  transition: .5s;
+  align-items: center;
+
+}
+
+.menu li div:hover {
+  height: 20px;
+
+  background-color: #05386B;
+  color: white;
 }
 
 
 
+.logo {
+  display: flex;
+}
 
-  
+.header .text {
+  margin-top: 17px;
+  color: #05386B;
+}
+
+.header img {
+
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  margin-left: 10px;
+
+}
+
+.header h2 {
+
+  font-size: 26px;
+  font-family: 'Bungee', cursive;
+  ;
+
+
+}
+
+.header p {
+
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: 'Istok Web', sans-serif;
+}
+
+.main-content {
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.content {
+  color: #b6bcc4;
+  margin-top: 20px;
+  display: grid;
+
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-bottom: 9px;
+  font-family: 'Arvo', serif;
+  transform: translate(800px);
+  transition: .5s;
+  color: black;
+}
+
+.content h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  transform: translate(0px, -800px);
+  transition: .6s;
+
+}
+
+.content p {
+  font-size: 20px;
+  width: 400px;
+  font-family: 'Caveat', cursive;
+  transform: translate(-900px);
+  transition: .5s;
+}
+
+
+.main-content img {
+  width: 100%;
+}
+
+.sidebanner {
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+  width: 450px;
+  height: 400px;
+  border: 1px #EDF5E1 solid;
+  margin-top: 30px;
+  margin-left: 70px;
+  scale: 10;
+  transition: .2s;
+}
+
+
+.content #sign-up {
+  padding: 9px 19px;
+  border: none;
+  background-color: #5CDC95;
+  border-radius: 5px;
+  color: #05386B;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0;
+  transition: 1s;
+}
+
+.content #sign-up:hover {
+  padding: 9px 19px;
+  border: none;
+  background-color: #34a366;
+  border-radius: 5px;
+  color: #05386B;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.preloader {
+  background: #b6bcc4;
+
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  position: relative;
+}
+
+.round {
+
+  width: 150px;
+  height: 150px;
+  background: #34a366 url(images/loader.gif) center center no-repeat;
+  background-size: 90%;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+
+
+}
+
+input:invalid {
+  border: 1px solid red;
+}

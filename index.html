@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Bungee&family=Caveat:wght@500&family=Istok+Web:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&display=swap" rel="stylesheet">    <body>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Bungee&family=Caveat:wght@500&family=Istok+Web:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&display=swap"
+        rel="stylesheet">
+
+<body>
 
 
-<div class="preloader">
-<div class="round"></div>
-</div>
+    <div class="preloader">
+        <div class="round"></div>
+    </div>
 
-<div class="main">  
+    <div class="main">
 
-    <!-- header section  -->
+        <!-- header section  -->
 
-    <div class="header">
-        <div class="logo">
-            <img src="images/logo.png" alt="">
-            <div class="text">
-            <h2>Town Hall</h2>
-            <p>Library of Bombay</p>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <div class="text">
+                    <h2>Town Hall</h2>
+                    <p>Library of Bombay</p>
+                </div>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+                    <li><a>
+                            <div>Home</div>
+                        </a></li>
+                    <li><a href="library.html">
+                            <div>Library</div>
+                        </a></li>
+                    <li><a>
+                            <div>About Us</div>
+                        </a></li>
+                </ul>
+
             </div>
         </div>
-        
-        <div class="menu">
-                
-             <ul>    
-                <li><a ><div>Home</div></a></li>  
-                <li><a href="library.html"><div>Library</div></a></li>
-                <li><a><div>About Us</div></a></li>
-             </ul>
-        
-         </div>
-    </div>
-    
-  <!-- main container which contain library image and greet -->
 
-    <div class="main-content">
+        <!-- main container which contain library image and greet -->
 
-        <div class="sidebanner">
-            <img src="images/sidebanner.png" alt="">
-            
+        <div class="main-content">
+
+            <div class="sidebanner">
+                <img src="images/sidebanner.png" alt="">
+
+            </div>
+
+            <div class="content">
+
+                <h1>WELCOME TO</h1>
+                <H3>Our Bombay Library</H3>
+                <p class="content-para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ea aspernatur. Quae et at sit est
+                    provident? Praesentium impedit dolorum hic aliquid nihil explicabo perspiciatis. Omnis in dolorum
+                    excepturi vel inventore dolor est quaerat consequatur? Facere quia explicabo modi labore voluptatum
+                    quasi corrupti ipsum, laudantium officia fuga, maxime eveniet porro?
+                </p>
+                <button id="sign-up">Sign Up</button>
+            </div>
         </div>
-  
-        <div class="content">
-            
-            <h1>WELCOME TO</h1>
-            <H3>Our Bombay Library</H3>
-            <p class="content-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ea aspernatur. Quae et at sit est provident? Praesentium impedit dolorum hic aliquid nihil explicabo perspiciatis. Omnis in dolorum excepturi vel inventore dolor est quaerat consequatur? Facere quia explicabo modi labore voluptatum quasi corrupti ipsum, laudantium officia fuga, maxime eveniet porro?
-            </p>
-            <button id="sign-up">Sign Up</button>
-        </div>     
+
+
+
     </div>
-        
-
-
-</div>
 
     <script src="script.js"></script>
     <script>
-     const header1 = document.querySelector('h1')
-     const header3 = document.querySelector('h3')
-     const para = document.querySelector('.content-para')
-     const signUp = document.querySelector('#sign-up')
-     const sidebanner = document.querySelector('.sidebanner')
-     
-     const loader = document.querySelector('.preloader');
-     window.addEventListener('load',()=>{
-        setTimeout(()=>{
-            loader.style.display='none';
-        }, 2000)
-        setTimeout(()=>{
-            header1.style='transform: translate(0px);color:#b6bcc4;';
-            header3.style='transform: translate(0px,0px);';
-            para.style='transform: translate(0px);';
-            signUp.style='opacity:1'
-            sidebanner.style='scale:1'
-            
+        const header1 = document.querySelector('h1')
+        const header3 = document.querySelector('h3')
+        const para = document.querySelector('.content-para')
+        const signUp = document.querySelector('#sign-up')
+        const sidebanner = document.querySelector('.sidebanner')
 
-        },2100)
-        
-    })
+        const loader = document.querySelector('.preloader');
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 2000)
+            setTimeout(() => {
+                header1.style = 'transform: translate(0px);color:#b6bcc4;';
+                header3.style = 'transform: translate(0px,0px);';
+                para.style = 'transform: translate(0px);';
+                signUp.style = 'opacity:1'
+                sidebanner.style = 'scale:1'
+
+
+            }, 2100)
+
+        })
 
     </script>
 </body>
+
 </html>

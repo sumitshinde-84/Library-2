@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,74 +9,88 @@
     <link rel="stylesheet" href="library.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Bungee&family=Caveat:wght@500&family=Istok+Web:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Bungee&family=Caveat:wght@500&family=Istok+Web:ital@1&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,400&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="main-container">
-       
+        <!-- <div class="text-animation">
+
+
+            <!-- <h1>Welcome, to our Bombay Library</h1>
+            <p>Let's Add Book's</p>
+
+
+        </div> --> -->
         <div class="header">
             <div class="logo">
                 <img src="images/logo.png" alt="">
                 <div class="text">
-                <h2>Town Hall</h2>
-                <p>Library of Bombay</p>
+                    <h2>Town Hall</h2>
+                    <p>Library of Bombay</p>
                 </div>
             </div>
-            
+
             <div class="menu">
-                    
-                 <ul>    
-                    <li><a ><div>Home</div></a></li>  
-                    <li><a href="library.html"><div>Library</div></a></li>
-                    <li><a><div>About Us</div></a></li>
-                 </ul>
-            
-             </div>
+
+                <ul>
+                    <li><a>
+                            <div>Home</div>
+                        </a></li>
+                    <li><a href="library.html">
+                            <div>Library</div>
+                        </a></li>
+                    <li><a>
+                            <div>About Us</div>
+                        </a></li>
+                </ul>
+
+            </div>
         </div>
         <div class="content">
-            
-          
-            <form action="" method="post" id="form">
 
+
+            <form action="" method="post" id="form" novalidate>
                 <h2>Bombay Library</h2>
-            
                 <div class="row">
                     <label for="bookTitle">TITLE</label>
-                    <input type="text" name="title" id="bookTitle" >
+                    <input type="text" name="title" id="bookTitle" required>
+                    <span id="title-error"></span>
                 </div>
-            
                 <div class="row">
                     <label for="bookAuthor">AUTHOR</label>
-                    <input type="text" name="author" id="bookAuthor" >
+                    <input type="text" name="author" id="bookAuthor" required>
+                    <span id="author-error"></span>
                 </div>
-            
                 <div class="row">
                     <label for="bookPages">PAGES</label>
-                    <input type="tel" name="pages" id="bookPages">
+                    <input type="tel" pattern="\d*" name="pages" id="bookPages" required>
+                    <span id="pages-error"></span>
                 </div>
-                
-               
                 <div class="container">
-                    <p style="font-size: 17px;font-weight: 500;margin-bottom: 10px;" id="Status">Not Read</p>
+                    <p id="Status">Not Read</p>
                     <label class="switch">
-                       
-                        <input class="checkbox checkbox-main"  type="checkbox" value='Not Read' />    
+                        <input class="checkbox checkbox-main" type="checkbox" value='Not Read' />
                         <div></div>
-            
+
                     </label>
                 </div>
-                <input type="reset" class="form-add" value="Add Book"> 
-        
+
+                <button type="submit" class="form-add">Add Book</button>
+
             </form>
-            
-            
+
+
         </div>
         <div class="addbtn">
             <img src="images/plus.png" alt="">
         </div>
-        
-<script src="script.js"></script>
+
+        <script src="script.js"></script>
 
     </div>
 </body>
+
 </html>
